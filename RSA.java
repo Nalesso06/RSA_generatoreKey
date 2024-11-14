@@ -69,7 +69,7 @@ public class RSA {
             encryptedString.append(encryptedChar).append(Delimitatore);
         }
 
-        System.out.println("Encryption steps: " + encryptedList);
+        System.out.println(" Crittografato" + encryptedList);
         return encryptedString.toString();
     }
  // Metodo per decifrare i dati
