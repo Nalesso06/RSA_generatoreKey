@@ -2,14 +2,19 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class RSA {
-    
-    private static final String TestoDaInviare = "PrimaProva";
     private static final String Delimitatore = ";";
-
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Inserisci la parola da inviare:");
+        String TestoDaInviare = scanner.nextLine();
+        System.out.println("La parola che hai inserito è: " + TestoDaInviare);
         executeRSA();
+        scanner.close();
+    }      
     }
 
     private static void executeRSA() { 
